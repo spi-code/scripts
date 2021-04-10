@@ -1,9 +1,9 @@
 #!/bin/sh
 export DEBIAN_FRONTEND=noninteractive
-apt-get update -yqq
-apt-get upgrade -yqq
-apt-get -yq install sudo wget curl unzip jq openjdk-9-jre openjdk-9-jdk vim 
+sudo apt-get update -yqq
+sudo apt-get upgrade -yqq
+sudo apt-get -yq install wget curl unzip jq openjdk-9-jre openjdk-9-jdk vim 
 
 #Docker
-curl -fsSL https://get.docker.com | sh
+curl -fsSL https://get.docker.com |  sudo sh
 sudo usermod -aG docker pi
